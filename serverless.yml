@@ -17,15 +17,6 @@ functions:
           method: post
 
     environment:
-       AWS_ACCESS_KEY_ID: "llavedeAcceso"
-       AWS_SECRET_ACCESS_KEY: "llavesecreat"
-       BUCKET: "bucket"
-
-plugins:
-  - serverless-offline
-
-custom:
-  serverless-offline:
-    noPrependStageInUrl: true
-    noHandlePreflight: true
-
+       AWS_ACCESS_KEY_ID: llaveDeAcceso
+       AWS_SECRET_ACCESS_KEY: llaveSecreata
+       BUCKET: bucketName
