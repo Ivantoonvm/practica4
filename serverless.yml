@@ -1,0 +1,31 @@
+service: practica4
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  lambdaHashingVersion: '20201221'
+  region: us-east-1
+
+functions:
+  upload:
+    handler: handler.uploadFile
+    timeout: 60 # seconds
+    memorySize: 128 # mb
+    events:
+      - http:
+          path: /
+          method: post
+
+    environment:
+       AWS_ACCESS_KEY_ID: "llavedeAcceso"
+       AWS_SECRET_ACCESS_KEY: "llavesecreat"
+       BUCKET: "bucket"
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true
+    noHandlePreflight: true
+
