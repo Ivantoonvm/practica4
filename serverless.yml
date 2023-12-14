@@ -17,6 +17,6 @@ functions:
           method: post
 
     environment:
-       AWS_ACCESS_KEY_ID: llaveDeAcceso
-       AWS_SECRET_ACCESS_KEY: llaveSecreata
+       ACCESS_KEY_ID: llaveDeAcceso
+       SECRET_ACCESS_KEY: llaveSecreata
        BUCKET: bucketName
