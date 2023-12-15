@@ -10,13 +10,13 @@ functions:
   upload:
     handler: handler.uploadFile
     timeout: 60 # seconds
-    memorySize: 128 # mb
+    memorySize: 512 # mb
     events:
       - http:
           path: /
           method: post
 
     environment:
-       ACCESS_KEY_ID: llaveDeAcceso
-       SECRET_ACCESS_KEY: llaveSecreata
-       BUCKET: bucketName
+       ACCESS_KEY_ID: AKIA2K6ZFIDZMOSD6FON
+       SECRET_ACCESS_KEY: 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
+       BUCKET: practica4
